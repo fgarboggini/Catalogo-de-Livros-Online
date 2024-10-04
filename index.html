@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Livros</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Catálogo de Livros Online</h1>
+
+        <h2>Adicionar Novo Livro</h2>
+        <form id="formulario-livro">
+            <input type="text" id="titulo" placeholder="Título do Livro" required>
+            <input type="text" id="autor" placeholder="Autor" required>
+            <input type="text" id="genero" placeholder="Gênero" required>
+            <input type="number" id="ano" placeholder="Ano de Publicação" required>
+            <button type="submit">Adicionar Livro</button>
+        </form>
+        
+        <h2>Buscar Livro</h2>
+        <form id="formulario-busca">
+            <input type="text" id="termo-busca" placeholder="Buscar por Título, Autor ou Gênero">
+            <button type="submit">Buscar</button>
+            <button type="button" id="limpar-busca">Limpar Busca</button> 
+        </form>
+        <div id="resultado-busca"></div> 
+
+        <h2>Filtrar e Classificar Livros</h2>
+        <button id="filtrar-genero">Filtrar por Gênero</button>
+        <button id="filtrar-autor">Filtrar por Autor</button>
+        <button id="filtrar-ano">Filtrar por Ano</button>
+        <button id="classificar-titulo">Classificar por Título</button>
+        <button id="classificar-avaliacao">Classificar por Avaliação</button>
+
+        <h2>Livros no Catálogo</h2>
+        <ul id="lista-livros"></ul>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
